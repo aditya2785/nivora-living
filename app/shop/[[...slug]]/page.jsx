@@ -1,3 +1,5 @@
+export const revalidate = 10;
+
 import { ProductGrid } from "@/components";
 import { getAllProducts } from "@/lib/api";
 
