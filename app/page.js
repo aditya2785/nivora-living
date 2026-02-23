@@ -5,9 +5,9 @@ import { ProductGrid } from "@/components";
 
 export default async function Home() {
   const products = await getAllProducts();
-  const featuredProducts = products.filter(
-  (product) => product.fields.featured === true
-);
+const featuredProducts = products
+  .filter((product) => product.fields.featured)
+  .slice(0, 3);
   return (
     <>
 
@@ -96,7 +96,7 @@ export default async function Home() {
           Featured Pieces
         </h2>
 
-<ProductGrid products={featuredProducts.slice(0, 3)} />
+<ProductGrid products={featuredProducts} />
       </section>
 
 
