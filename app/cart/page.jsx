@@ -23,12 +23,12 @@ const CartPage = () => {
 
   return (
     <div className="bg-primary">
-      <div className="mx-auto max-w-2xl px-4 pb-24 pt-16 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-4 pb-24 pt-12 sm:px-6 lg:max-w-7xl lg:px-8">
         <h1 className="text-3xl font-light tracking-tight text-gray-900 sm:text-4xl">
           Shopping Cart
         </h1>
 
-        <div className="mt-12 lg:grid lg:grid-cols-12 lg:items-start lg:gap-x-12 xl:gap-x-16">
+        <div className="mt-10 lg:grid lg:grid-cols-12 lg:items-start lg:gap-x-12 xl:gap-x-16">
           <section className="lg:col-span-7">
             <ul className="divide-y divide-gray-200 border-b border-t border-gray-200">
               {products.map((product) => (
@@ -127,8 +127,8 @@ const CartPage = () => {
             <div className="mt-6">
               <Link
                 href="/checkout"
-                className="flex justify-center items-center w-full h-14 bg-white text-blackPrimary text-xl"
-              >
+                className="block w-full bg-black text-white text-center py-4 text-lg font-medium mt-6 hover:opacity-90 transition"
+>
                 Checkout
               </Link>
             </div>
