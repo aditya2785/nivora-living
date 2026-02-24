@@ -21,7 +21,6 @@ export default function AboutUsPage() {
         <img
           src="/about-nivora.jpg"
           alt="About Nivora Living"
-          fill
           className="object-cover"
         />
 

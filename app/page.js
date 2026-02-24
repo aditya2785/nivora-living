@@ -28,7 +28,7 @@ const featuredProducts = products
           </p>
 
           <h1 className="text-6xl md:text-7xl font-light leading-tight">
-            Metal Home Decor
+            Handcrafted
           </h1>
 
           <h2 className="text-4xl md:text-5xl tracking-[0.3em] mt-4">
