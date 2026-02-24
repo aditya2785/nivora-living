@@ -9,7 +9,7 @@ const merriweather = Merriweather({
 
 export const metadata = {
   title: {
-    default: "Nivora Living | Aesthetic Indian-Inspired Metal Home Decor",
+    default: "Nivora Living | Luxury Indian Metal Home Decor",
     template: "%s | Nivora Living",
   },
   description:

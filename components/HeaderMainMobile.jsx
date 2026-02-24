@@ -1,22 +1,30 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { HiChevronDown } from "react-icons/hi";
+import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import EngLanguage from "../public/eng language.png";
 import Link from "next/link";
 import CartHeaderElement from "@/components/CartHeaderElement";
 
 const HeaderMainMobile = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="md:hidden fixed top-0 left-0 w-full bg-white border-b border-black/10 z-50">
 
       {/* Top Row */}
       <div className="flex items-center justify-between px-4 h-[60px]">
 
-        {/* Language */}
-        <div className="flex items-center gap-x-1">
-          <Image src={EngLanguage} alt="English language" className="w-4" />
-          <p className="text-blackPrimary text-[11px] tracking-wide">EN</p>
-          <HiChevronDown className="text-blackPrimary text-xs" />
-        </div>
+        {/* Hamburger */}
+        <button onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? (
+            <HiOutlineX className="text-2xl" />
+          ) : (
+            <HiOutlineMenu className="text-2xl" />
+          )}
+        </button>
 
         {/* Logo */}
         <Link href="/" className="flex items-center justify-center">
@@ -34,24 +42,30 @@ const HeaderMainMobile = () => {
         <CartHeaderElement />
       </div>
 
-      {/* Navigation */}
-      <nav className="flex justify-center gap-4 py-2 text-[11px] tracking-[0.15em] uppercase border-t border-black/5">
-        <Link href="/" className="hover:opacity-60 transition">
-          Home
-        </Link>
+      {/* Slide Menu */}
+      <div
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+          isOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <nav className="flex flex-col items-center gap-6 py-6 text-sm tracking-[0.2em] uppercase border-t border-black/5">
+          <Link href="/" onClick={() => setIsOpen(false)}>
+            Home
+          </Link>
 
-        <Link href="/shop" className="hover:opacity-60 transition">
-          Shop
-        </Link>
+          <Link href="/shop" onClick={() => setIsOpen(false)}>
+            Shop
+          </Link>
 
-        <Link href="/about-us" className="hover:opacity-60 transition">
-          About
-        </Link>
+          <Link href="/about-us" onClick={() => setIsOpen(false)}>
+            About
+          </Link>
 
-        <Link href="/contact" className="hover:opacity-60 transition">
-          Contact
-        </Link>
-      </nav>
+          <Link href="/contact" onClick={() => setIsOpen(false)}>
+            Contact
+          </Link>
+        </nav>
+      </div>
 
     </header>
   );
