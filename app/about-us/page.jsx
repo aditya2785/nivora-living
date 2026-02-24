@@ -21,7 +21,7 @@ export default function AboutUsPage() {
         <img
           src="/about-nivora.jpg"
           alt="About Nivora Living"
-          className="object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
         />
 
         {/* Cinematic Overlay */}
