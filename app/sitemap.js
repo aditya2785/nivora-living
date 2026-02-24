@@ -1,4 +1,13 @@
-export default function sitemap() {
+import { getAllProducts } from "@/lib/api";
+
+export default async function sitemap() {
+  const products = await getAllProducts();
+
+  const productUrls = products.map((product) => ({
+    url: `https://nivoraliving.co/shop/${product.fields.slug}`,
+    lastModified: new Date(),
+  }));
+
   return [
     {
       url: "https://nivoraliving.co",
@@ -16,5 +25,6 @@ export default function sitemap() {
       url: "https://nivoraliving.co/contact",
       lastModified: new Date(),
     },
+    ...productUrls,
   ];
 }

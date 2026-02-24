@@ -23,12 +23,49 @@ export const metadata = {
     "modern ethnic decor",
     "international home styling",
   ],
-  metadataBase: new URL("https://www.nivoraliving.com"),
+  metadataBase: new URL("https://nivoraliving.co"),
+  openGraph: {
+  title: "Nivora Living | Aesthetic Indian-Inspired Metal Home Decor",
+  description:
+    "Discover timeless Indian-inspired metal home decor crafted for modern living.",
+  url: "https://nivoraliving.co",
+  siteName: "Nivora Living",
+  images: [
+    {
+      url: "/nivora-hero.jpg",
+      width: 1200,
+      height: 630,
+    },
+  ],
+  type: "website",
+},
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Nivora Living",
+      url: "https://nivoraliving.co",
+      logo: "https://nivoraliving.co/logo.png",
+      sameAs: [
+        "https://www.instagram.com/shopnivoraliving/",
+        "https://www.facebook.com/profile.php?id=61588533831742",
+        "https://x.com/NivoraLiving",
+        "https://in.pinterest.com/shopnivoraliving/",
+        "https://www.youtube.com/@NivoraLiving",
+        "https://www.linkedin.com/in/nivoraliving/"
+      ]
+    })
+  }}
+/>
+      </head>
       <body
         className={`${merriweather.className} antialiased bg-white text-secondary`}
       >
@@ -41,3 +78,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+

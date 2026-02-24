@@ -1,3 +1,30 @@
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  const product = await getProductBySlug(slug);
+
+  if (!product) return {};
+
+  return {
+    title: `${product.fields.title} | Nivora Living`,
+    description:
+      product.fields.shortDescription ||
+      `Discover the ${product.fields.title} by Nivora Living — handcrafted Indian-inspired metal home decor designed for modern interiors.`,
+    openGraph: {
+      title: `${product.fields.title} | Nivora Living`,
+      description:
+        product.fields.shortDescription ||
+        `Premium Indian-inspired metal decor by Nivora Living.`,
+      images: [
+        {
+          url: `https:${product.fields.image.fields.file.url}`,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+  };
+}
+
 import {
     ProductGrid,
 } from "@/components";
@@ -19,9 +46,33 @@ const SingleProductPage = async ({ params }) => {
     }
 
     const price = product.fields.price ?? null;
+    const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: product.fields.title,
+  image: `https:${product.fields.image.fields.file.url}`,
+  description: product.fields.shortDescription,
+  brand: {
+    "@type": "Brand",
+    name: "Nivora Living",
+  },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "USD",
+    price: price,
+    availability:
+  price !== null
+    ? "https://schema.org/InStock"
+    : "https://schema.org/OutOfStock",
+  },
+};
 
     return (
         <div className="bg-white">
+            <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+/>
 
             {/* FIRST VIEW */}
             <div className="min-h-[80vh] flex items-center">
@@ -47,7 +98,7 @@ const SingleProductPage = async ({ params }) => {
                         <div className="flex flex-col justify-center pt-6">
 
                             <h1 className="text-2xl md:text-3xl font-light tracking-wide leading-snug mb-5 max-w-lg">
-                                {product.fields.title}
+                                {product.fields.title} – Nivora Living
                             </h1>
 
                             <div className="flex items-center gap-3 mb-4">

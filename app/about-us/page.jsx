@@ -1,9 +1,14 @@
+export const metadata = {
+  title: "About Nivora Living | Indian-Inspired Luxury Metal Home Decor Brand",
+  description:
+    "Learn about Nivora Living — a premium Indian-inspired metal home decor brand blending heritage craftsmanship with modern global design aesthetics.",
+};
 import {
   ImageTextSection,
   StatsSection,
   FullImageSection,
 } from "@/components";
-
+import Image from "next/image";
 export default function AboutUsPage() {
   return (
     <div>
@@ -12,10 +17,12 @@ export default function AboutUsPage() {
       <div className="relative h-[90vh] w-full overflow-hidden">
 
         {/* Background Image */}
+        
         <img
           src="/about-nivora.jpg"
           alt="About Nivora Living"
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
 
         {/* Cinematic Overlay */}
@@ -216,7 +223,7 @@ export default function AboutUsPage() {
         <p className="text-lg tracking-wide">
           Reach out to us — we’d love to connect.
         </p>
-
+<Link href="/shop">Explore our collection</Link>
       </div>
 
     </div>
