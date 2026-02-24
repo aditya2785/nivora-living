@@ -114,7 +114,7 @@ const handleSubmit = async (e) => {
             { icon: <FaFacebookF />, link: "https://www.facebook.com/profile.php?id=61588533831742" },
             { icon: <FaInstagram />, link: "https://www.instagram.com/shopnivoraliving/" },
             { icon: <FaPinterestP />, link: "https://in.pinterest.com/shopnivoraliving/" },
-            { icon: <FaEtsy />, link: "https://etsy.com" },
+            { icon: <FaEtsy />, link: "https://nivoraliving.etsy.com" },
             { icon: <FaYoutube />, link: "https://www.youtube.com/channel/UC-ntLy6lToFolGdyMtfk9CQ" },
             { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/nivoraliving/" },
             { icon: <FaXTwitter />, link: "https://x.com/NivoraLiving" },

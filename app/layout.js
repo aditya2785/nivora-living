@@ -60,7 +60,9 @@ export default function RootLayout({ children }) {
         "https://x.com/NivoraLiving",
         "https://in.pinterest.com/shopnivoraliving/",
         "https://www.youtube.com/@NivoraLiving",
-        "https://www.linkedin.com/in/nivoraliving/"
+        "https://www.linkedin.com/in/nivoraliving/",
+        "https://nivoraliving.etsy.com"
+        
       ]
     })
   }}
