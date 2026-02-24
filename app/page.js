@@ -11,6 +11,14 @@ const featuredProducts = products
   return (
     <>
 
+
+      {/* BREAKPOINT DEBUG (Temporary) */}
+<div className="fixed bottom-0 left-0 bg-black text-white p-2 text-xs z-[9999]">
+  <span className="block sm:hidden">XS</span>
+  <span className="hidden sm:block md:hidden">SM</span>
+  <span className="hidden md:block lg:hidden">MD</span>
+  <span className="hidden lg:block">LG+</span>
+</div>
       {/* HERO SECTION */}
       <section className="relative h-[85vh] flex items-center justify-center text-center">
         <Image

@@ -6,7 +6,7 @@ import CartHeaderElement from "./CartHeaderElement";
 
 const HeaderMain = () => {
   return (
-    <header className="fixed top-0 left-0 w-full bg-white border-b border-gray-200 px-16 hidden lg:block z-50"
+    <header className="fixed top-0 left-0 w-full bg-white border-b border-gray-200 px-16 hidden lg:block z-50">
       
       <div className="flex items-center justify-between h-[110px]">
 

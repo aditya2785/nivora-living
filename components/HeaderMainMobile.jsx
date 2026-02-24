@@ -13,7 +13,7 @@ const HeaderMainMobile = () => {
   return (
     <>
       {/* ===== MOBILE HEADER BAR ===== */}
-      <header className="fixed top-0 left-0 w-full bg-red-500 lg:hidden z-50">
+      <header className="fixed top-0 left-0 w-full bg-white border-b border-black/10 lg:hidden z-50">
 
         <div className="flex items-center justify-between px-4 h-[60px]">
 
