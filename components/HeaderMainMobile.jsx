@@ -6,15 +6,15 @@ import CartHeaderElement from "@/components/CartHeaderElement";
 
 const HeaderMainMobile = async () => {
   return (
-    <header className="fixed top-0 left-0 w-full bg-white border-b border-black/10 px-4 py-3 md:hidden z-50">
+    <header className="fixed top-0 left-0 w-full bg-white border-b border-black/10 md:hidden z-50">
 
       {/* Top Row */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between px-4 h-[60px]">
 
         {/* Language */}
         <div className="flex items-center gap-x-1">
-          <Image src={EngLanguage} alt="English language" className="w-5" />
-          <p className="text-blackPrimary text-[11px] tracking-wide">EN</p>
+          <Image src={EngLanguage} alt="English language" className="w-4" />
+          <p className="text-blackPrimary text-[10px] tracking-wide">EN</p>
           <HiChevronDown className="text-blackPrimary text-xm" />
         </div>
 
@@ -23,8 +23,8 @@ const HeaderMainMobile = async () => {
   <Image
     src="/logo.png"
     alt="Nivora Living Logo"
-    width={100}
-    height={35}
+    width={85}
+    height={28}
     priority
     className="object-contain"
   />
@@ -36,7 +36,7 @@ const HeaderMainMobile = async () => {
       </div>
 
   {/* Navigation */}
-  <nav className="flex justify-center gap-5 mt-3 text-[11px] tracking-[0.15em] uppercase">
+  <nav className="flex justify-center gap-4 py-2 text-[10px] tracking-[0.12em] uppercase border-t border-black/5">
     <Link href="/" className="text-blackPrimary hover:opacity-60 transition">
       Home
     </Link>
