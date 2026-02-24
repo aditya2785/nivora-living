@@ -1,4 +1,3 @@
-import Link from "next/link";
 export const metadata = {
   title: "About Nivora Living | Indian-Inspired Luxury Metal Home Decor Brand",
   description:
@@ -9,7 +8,7 @@ import {
   StatsSection,
   FullImageSection,
 } from "@/components";
-import Image from "next/image";
+
 export default function AboutUsPage() {
   return (
     <div>
@@ -224,7 +223,7 @@ export default function AboutUsPage() {
         <p className="text-lg tracking-wide">
           Reach out to us — we’d love to connect.
         </p>
-<Link href="/shop">Explore our collection</Link>
+
       </div>
 
     </div>
