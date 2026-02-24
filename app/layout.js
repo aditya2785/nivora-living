@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
         className={`${merriweather.className} antialiased bg-white text-secondary`}
       >
         <Header />
-        <main className="pt-[100px] bg-white">
+        <main className="pt-[80px] md:pt-[110px] bg-white">
   {children}
 </main>
         <Footer />
