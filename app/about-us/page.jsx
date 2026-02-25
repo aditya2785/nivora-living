@@ -1,6 +1,6 @@
 import Link from "next/link";
 export const metadata = {
-  title: "About Nivora Living | Indian-Inspired Luxury Metal Home Decor Brand",
+  title: "About Nivora Living | Indian Metal Artistry for Modern Spaces",
   description:
     "Learn about Nivora Living — a premium Indian-inspired metal home decor brand blending heritage craftsmanship with modern global design aesthetics.",
 };

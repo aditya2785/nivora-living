@@ -17,7 +17,7 @@ const ShopPage = async () => {
       {/* Page Heading */}
       <div className="text-center max-w-4xl mx-auto mb-20">
         <h1 className="font-light text-6xl tracking-wide max-[600px]:text-4xl">
-          Shop Nivora Living – Luxury Indian Metal Home Decor
+          Shop Indian Metal Home Decor | Sculptures, Candle Holders & Accents
         </h1>
 
         <p className="text-xl font-light leading-relaxed mt-8 max-[600px]:text-lg max-[400px]:text-base">

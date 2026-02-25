@@ -25,7 +25,7 @@ export const metadata = {
   ],
   metadataBase: new URL("https://nivoraliving.co"),
   openGraph: {
-    title: "Nivora Living | Aesthetic Indian-Inspired Metal Home Decor",
+    title: "Luxury Indian Metal Home Decor | Nivora Living",
     description:
       "Discover timeless Indian-inspired metal home decor crafted for modern living.",
     url: "https://nivoraliving.co",
