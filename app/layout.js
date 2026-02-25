@@ -47,7 +47,10 @@ export default function RootLayout({ children }) {
       <head>
         {/* ✅ CRITICAL FIX FOR MOBILE RESPONSIVENESS */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+        <meta
+          name="msvalidate.01"
+          content="62EBA40791E64B2DB157031E473FCE8D"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

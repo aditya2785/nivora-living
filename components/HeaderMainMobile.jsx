@@ -49,7 +49,16 @@ const HeaderMainMobile = () => {
         }`}
       >
         <nav className="flex flex-col items-center gap-6 py-6 text-sm tracking-[0.2em] uppercase border-t border-black/5">
-          <Link href="/" onClick={() => setIsOpen(false)}>
+          <Link
+            href="/"
+            onClick={(e) => {
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+              setIsOpen(false);
+            }}
+          >
             Home
           </Link>
 

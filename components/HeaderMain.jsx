@@ -1,3 +1,4 @@
+"use client";
 import EngLanguage from "../public/eng language.png";
 import { HiChevronDown } from "react-icons/hi";
 import Image from "next/image";
@@ -27,6 +28,12 @@ const HeaderMain = () => {
           <Link
             href="/"
             className="hover:opacity-60 transition"
+            onClick={(e) => {
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
           >
             Home
           </Link>
