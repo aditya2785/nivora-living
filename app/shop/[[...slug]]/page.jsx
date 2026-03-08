@@ -22,7 +22,7 @@ const ShopPage = async () => {
             Home Accents
           </h1>
 
-          <p className="text-lg leading-relaxed text-neutral-600 max-[600px]:text-base">
+          <p className="text-lg leading-relaxed text-neutral-600 mt-3 max-[600px]:text-base">
             A refined collection of handcrafted decor designed to bring warmth,
             character, and timeless elegance to modern spaces.
           </p>
