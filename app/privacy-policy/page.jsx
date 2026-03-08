@@ -5,8 +5,8 @@ export default function PrivacyPolicyPage() {
       <h1 className="text-5xl font-light mb-12">Privacy Policy</h1>
 
       <p className="text-lg leading-relaxed mb-6">
-        Nivora Living operates the website www.nivoraliving.com and creates
-        handcrafted metal home décor and lifestyle products. This Privacy Policy
+        Nivora Living operates the website www.nivoraliving.co and creates
+        handcrafted home décor and lifestyle products. This Privacy Policy
         explains how we collect, use, and disclose your personal information when
         you visit or make a purchase from our website.
       </p>
