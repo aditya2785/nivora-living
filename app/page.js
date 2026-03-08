@@ -27,7 +27,7 @@ const featuredProducts = products
             For bespoke decor inquiries, contact us at nivoraliving@gmail.com
           </p>
 
-          <h1 className="text-6xl md:text-7xl font-light leading-tight">
+          <h1 className="text-6xl md:text-7xl font-light leading-[1.2]">
             Handcrafted
           </h1>
 
