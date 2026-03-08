@@ -11,7 +11,7 @@ const featuredProducts = products
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative h-[85vh] flex items-center justify-center text-center">
+      <section className="relative min-h-[85vh] flex items-center justify-center text-center">
         <Image
           src="/nivora-hero.jpg"
           alt="Nivora Living Hero"
@@ -27,15 +27,15 @@ const featuredProducts = products
             For bespoke decor inquiries, contact us at nivoraliving@gmail.com
           </p>
 
-          <h1 className="text-6xl md:text-7xl font-light leading-[1.2]">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-light leading-[1.2]">
             Handcrafted
           </h1>
 
-          <h2 className="text-4xl md:text-5xl tracking-[0.4em] mt-8">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl tracking-[0.25em] md:tracking-[0.4em] mt-8">
             HOME DECOR
           </h2>
 
-          <div className="mt-10">
+          <div className="mt-12 md:mt-14">
             <Link
               href="/shop"
               className="border border-black px-10 py-4 text-lg font-light hover:bg-black hover:text-white transition"
@@ -48,7 +48,7 @@ const featuredProducts = products
 
 
 {/* INTRO SECTION */}
-<section className="py-20 pb-17 px-6 bg-white text-center">
+<section className="py-20 pb-16 px-6 bg-white text-center">
 
   <div className="max-w-4xl mx-auto">
 
@@ -90,7 +90,7 @@ const featuredProducts = products
 <div className="border-t border-gray-300 max-w-6xl mx-auto" />
 
       {/* FEATURED COLLECTION */}
-      <section className="py-12 px-10">
+      <section className="py-16 px-6 md:px-10">
         <h2 className="text-4xl uppercase tracking-[0.3em] font-light text-center mb-10">
           Featured Pieces
         </h2>
@@ -114,7 +114,7 @@ const featuredProducts = products
 
   <div className="relative z-10 text-white px-6 max-w-3xl">
 
-    <h2 className="text-5xl md:text-6xl font-light mb-6">
+    <h2 className="text-4xl sm:text-5xl md:text-6xl">
       Crafted with Purpose.
     </h2>
 
