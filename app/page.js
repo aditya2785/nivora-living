@@ -23,7 +23,7 @@ const featuredProducts = products
         <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" />
 
         <div className="relative z-10 max-w-4xl px-6">
-          <p className="text-lg tracking-wide mb-6 font-light">
+          <p className="text-sm md:text-base tracking-wide mb-6 font-light text-black/80">
             For bespoke decor inquiries, contact us at nivoraliving@gmail.com
           </p>
 
