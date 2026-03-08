@@ -15,15 +15,18 @@ const ShopPage = async () => {
     <div className="bg-white w-full">
     <div className="max-w-screen-2xl mx-auto mt-20 px-10 max-[500px]:px-5">
       {/* Page Heading */}
-      <div className="text-center max-w-4xl mx-auto mb-20">
-        <h1 className="font-light text-6xl tracking-tight max-[600px]:text-4xl">
-          Home Accents
-        </h1>
+<div className="text-center max-w-3xl mx-auto mb-24 px-6">
+  <h1 className="font-serif text-5xl tracking-tight max-[600px]:text-4xl">
+    Home Accents
+  </h1>
 
-        <p className="text-xl font-light leading-relaxed mt-8 max-[600px]:text-lg max-[400px]:text-base">
-          A curated collection of decor pieces designed to bring warmth, character, and timeless elegance to modern interiors.
-        </p>
-      </div>
+  <div className="w-16 h-[1px] bg-neutral-300 mx-auto my-6"></div>
+
+  <p className="text-lg leading-relaxed text-neutral-600 max-[600px]:text-base">
+    A refined collection of handcrafted decor designed to bring warmth,
+    character, and timeless elegance to modern spaces.
+  </p>
+</div>
 
       {/* Product Grid */}
       <div className="pb-24">
