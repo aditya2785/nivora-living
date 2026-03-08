@@ -31,9 +31,7 @@ const featuredProducts = products
             Handcrafted
           </h1>
 
-          <h2 className="text-4xl md:text-5xl tracking-[0.3em] mt-4">
-            METAL HOME DECOR
-          </h2>
+
 
           <div className="mt-10">
             <Link
