@@ -24,10 +24,7 @@ const ShopPage = async () => {
 
           <div className="w-16 h-[1px] bg-neutral-300 mx-auto my-6"></div>
 
-          <p className="text-lg leading-relaxed text-neutral-600 max-[600px]:text-base">
-            A refined collection of handcrafted decor designed to bring warmth,
-            character, and timeless elegance to modern spaces.
-          </p>
+
         </div>
 
         {/* Product Grid */}
