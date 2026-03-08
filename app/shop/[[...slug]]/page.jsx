@@ -14,7 +14,7 @@ const ShopPage = async () => {
 
   return (
     <div className="bg-white w-full">
-      <div className="max-w-screen-xl mx-auto mt-24 px-6">
+      <div className="max-w-screen-xl mx-auto mt-10 px-6">
 
         {/* Page Heading */}
         <div className="text-center mb-10">
