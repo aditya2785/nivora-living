@@ -31,7 +31,7 @@ const featuredProducts = products
             Handcrafted
           </h1>
 
-          <h2 className="text-4xl md:text-5xl tracking-[0.3em] mt-4">
+          <h2 className="text-4xl md:text-5xl tracking-[0.4em] mt-8">
             HOME DECOR
           </h2>
 
