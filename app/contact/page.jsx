@@ -85,7 +85,7 @@ export default function ContactPage() {
 
             <div className="flex items-center gap-4 text-lg font-light">
               <HiOutlinePhone className="text-[#C8A75C] text-2xl" />
-              <p>+91-98765 43210</p>
+              <p>+91-93151 44408</p>
             </div>
 
             <div>
